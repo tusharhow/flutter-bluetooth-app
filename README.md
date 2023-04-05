@@ -1,16 +1,21 @@
-# flutter_bluetooth_app
+# Flutter Bluetooth Tutorial
 
-A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### In this project, you'll learn:
 
-A few resources to get you started if this is your first Flutter project:
+. How to add the Flutter Blue plugin to your project
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+. How to scan for available Bluetooth devices using Flutter
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+. How to display the list of available devices in your Flutter app
+
+. Connecting Bluetooth
+
+. More (Comming soon)
+
+If you're interested in learning how to program Bluetooth devices in Flutter, this project is for you!
+
+- [Flutter Bluetooth Tutorial: How to Scan for Devices and Show [Part 1] ](https://docs.flutter.dev/get-started/codelab)
+
