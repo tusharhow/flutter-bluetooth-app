@@ -22,4 +22,10 @@ class BluetoothController extends GetxController {
 
   // scan result stream
   Stream<List<ScanResult>> get scanResults => flutterBlue.scanResults;
+
+  // connect to device
+  Future<void> connectToDevice(BluetoothDevice device) async {
+    await device.connect();
+  }
+
 }

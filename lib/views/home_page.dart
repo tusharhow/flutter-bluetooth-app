@@ -44,17 +44,22 @@ class HomePage extends StatelessWidget {
                           shrinkWrap: true,
                           itemCount: snapshot.data!.length,
                           itemBuilder: (context, index) {
+                            final device = snapshot.data![index].device;
                             return Card(
                               elevation: 2,
                               child: ListTile(
-                                onTap: () {
-                                  print(snapshot.data!.length);
-                                },
-                                title: Text(snapshot.data![index].device.name),
-                                subtitle:
-                                    Text(snapshot.data![index].device.id.id),
-                                trailing:
-                                    Text(snapshot.data![index].rssi.toString()),
+                                onTap: () {},
+                                title: Text(device.name),
+                                subtitle: Text(device.id.id),
+                                trailing: TextButton(
+                                  onPressed: () {
+                                    controller.connectToDevice(device);
+                                  },
+                                  child: Text(BluetoothDeviceState.connected ==
+                                          device.state
+                                      ? 'Connected'
+                                      : 'Connect'),
+                                ),
                               ),
                             );
                           },
